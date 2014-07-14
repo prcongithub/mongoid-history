@@ -213,6 +213,7 @@ module Mongoid
 
           @history_tracker_attributes[:original] = original
           @history_tracker_attributes[:modified] = modified
+          @history_tracker_attributes[:wrapper_object] = send(:wrapper_object)
           @history_tracker_attributes
         end
 
